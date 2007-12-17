@@ -11,7 +11,6 @@ Patch0: pnputils-0.1-destdir.patch.bz2
 License: GPL
 Group: System/Kernel and hardware
 Url: ftp://ftp.kernel.org/pub/linux/kernel/people/helgaas/
-BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 
 %description
