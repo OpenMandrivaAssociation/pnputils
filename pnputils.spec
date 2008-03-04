@@ -1,11 +1,10 @@
 %define name pnputils
 %define version 0.1
-%define release %mkrel 1
 
 Summary: Dump resource information for PnP devices
 Name: %{name}
 Version: %{version}
-Release: %{release}
+Release: %mkrel 2
 Source0: %{name}-%{version}.tar.bz2
 Patch0: pnputils-0.1-destdir.patch.bz2
 License: GPL
