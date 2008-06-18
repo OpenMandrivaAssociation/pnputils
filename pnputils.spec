@@ -4,7 +4,7 @@
 Summary: Dump resource information for PnP devices
 Name: %{name}
 Version: %{version}
-Release: %mkrel 3
+Release: %mkrel 4
 Source0: %{name}-%{version}.tar.bz2
 Patch0: pnputils-0.1-destdir.patch.bz2
 License: GPL
