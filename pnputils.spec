@@ -25,14 +25,14 @@ A utility for dumping resource information for PnP devices.
 %make
 
 %install
-rm -rf $RPM_BUILD_ROOT
+rm -rf %{buildroot}
 %makeinstall_std
 
 #packaged as part of ldetect-lst
-rm -f $RPM_BUILD_ROOT%{_datadir}/misc/pnp.ids
+rm -f %{buildroot}%{_datadir}/misc/pnp.ids
 
 %clean
-rm -rf $RPM_BUILD_ROOT
+rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root)
