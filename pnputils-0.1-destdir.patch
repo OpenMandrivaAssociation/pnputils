@@ -1,0 +1,30 @@
+--- pnputils-0.1/Makefile.destdir	2006-07-07 00:54:10.000000000 +0200
++++ pnputils-0.1/Makefile	2006-07-10 13:26:34.000000000 +0200
+@@ -3,6 +3,11 @@
+ VERSION=0.1
+ DATE="July 6, 2006"
+ 
++DESTDIR=
++SBINDIR=$(DESTDIR)/sbin
++MANDIR=$(DESTDIR)/usr/share/man/man8
++MISCDIR=$(DESTDIR)/usr/share/misc
++
+ all:	lspnp lspnp.8 setpnp setpnp.8
+ 
+ clean:
+@@ -12,9 +17,12 @@
+ 	M=`echo $(DATE)`; sed <$< >$@ "s/@TODAY@/$$M/;s/@VERSION@/pnputils-$(VERSION)/;"
+ 
+ install: all
+-	install -m 755 lspnp setpnp /sbin
+-	install -m 644 lspnp.8 setpnp.8 /usr/share/man/man8
+-	install -m 644 pnp.ids /usr/share/misc
++	install -d $(SBINDIR)
++	install -m 755 lspnp setpnp $(SBINDIR)
++	install -d $(MANDIR)
++	install -m 644 lspnp.8 setpnp.8 $(MANDIR)
++	install -d $(MISCDIR)
++	install -m 644 pnp.ids $(MISCDIR)
+ 
+ REL=pnputils-$(VERSION)
+ DISTTMP=/tmp/pnputils-dist
