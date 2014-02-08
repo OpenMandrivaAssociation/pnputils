@@ -3,7 +3,7 @@
 Summary: Dump resource information for PnP devices
 Name:    pnputils
 Version: 0.1
-Release: 9
+Release: 10
 Source0: %{name}-%{version}.tar.bz2
 Patch0:  pnputils-0.1-destdir.patch
 License: GPL
