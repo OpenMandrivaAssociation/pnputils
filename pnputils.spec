@@ -3,7 +3,7 @@
 Summary:	Dump resource information for PnP devices
 Name:		pnputils
 Version:	0.1
-Release:	13
+Release:	14
 License:	GPLv2
 Group:		System/Kernel and hardware
 Url:		ftp://ftp.kernel.org/pub/linux/kernel/people/helgaas/
