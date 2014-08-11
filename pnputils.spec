@@ -19,6 +19,7 @@ A utility for dumping resource information for PnP devices.
 %apply_patches
 
 %build
+%setup_compile_flags
 %make
 
 %install
